@@ -17,3 +17,9 @@ Instructions for setting up the project locally.
 - Peter Oswald
 - Email: info@ittechradar.com.au
 - Phone: 0467735440
+
+## Live Demo
+Visit the live site: [Personal Website](https://peterosw.github.io/personal-website-v2/)
+
+## Development
+This site is hosted using GitHub Pages. The main branch is automatically deployed to the live site.
