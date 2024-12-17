@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Pete Oswald</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Pete Oswald - Software Engineer specializing in building impactful digital solutions">
+    <style>
+        body {
+            background-color: #ffffff;
+            color: #000000;
+        }
+        .navbar, .footer {
+            background-color: #f8f9fa;
+        }
+        .footer {
+            padding: 10px 0;
+        }
+        .list-group-item {
+            border: none;
+            padding: 10px 15px;
+            background-color: #ffffff;
+        }
+        .list-group-item a {
+            color: #000000;
+            text-decoration: none;
+        }
+        .list-group-item a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">PeterOswald.com</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="resume.html">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="links.html">Links</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <section class="hero animate-in">
+            <div class="profile-photo">
+                <img src="assets/images/profile-photo.jpg" alt="Pete Oswald">
+            </div>
+            <h1>Hi, I'm Pete Oswald</h1>
+            <p class="tagline">Software Engineer & Problem Solver</p>
+            <div class="header-actions">
+                <a href="resume.html" class="button">View Resume</a>
+                <a href="mailto:peterosw@gmail.com" class="button outline">Get in Touch</a>
+            </div>
+        </section>
+
+        <section class="about animate-in">
+            <h2>About Me</h2>
+            <p>With over 25 years of experience as a Program Manager, I specialize in bridging the gap between technology and business to drive innovative solutions. Based in Melbourne, Australia, I've successfully led large-scale digital transformations across public and private sectors, including Services Australia, Seek, and Medibank. My expertise spans cloud transformation, agile methodologies, and strategic program delivery, with a particular focus on creating secure, scalable, and user-centric solutions.</p>
+            <p>Holding multiple advanced degrees including Strategic Security Studies and International Relations, I bring a unique perspective to complex technological challenges. I'm passionate about fostering collaboration, driving efficiency through technology, and delivering measurable business outcomes while maintaining the highest standards of security and compliance.</p>
+            <div class="tags">
+                <span class="tag">Program Management</span>
+                <span class="tag">Cloud Architecture</span>
+                <span class="tag">Agile/SAFe</span>
+                <span class="tag">Digital Transformation</span>
+                <span class="tag">Security & GRC</span>
+                <span class="tag">Stakeholder Management</span>
+            </div>
+        </section>
+
+        <section class="featured-posts animate-in">
+            <h2>Latest Posts</h2>
+            <div class="post-grid">
+                <article class="post-card">
+                    <h3>Building Scalable Web Applications</h3>
+                    <div class="post-meta">June 15, 2023</div>
+                    <p>Exploring best practices for building scalable and maintainable web applications...</p>
+                    <a href="blog.html" class="read-more">Read More →</a>
+                </article>
+                <article class="post-card">
+                    <h3>The Future of AI in Software Development</h3>
+                    <div class="post-meta">May 28, 2023</div>
+                    <p>Examining how artificial intelligence is transforming the software development landscape...</p>
+                    <a href="blog.html" class="read-more">Read More →</a>
+                </article>
+            </div>
+            <div class="center-button">
+                <a href="blog.html" class="button outline">View All Posts</a>
+            </div>
+        </section>
+
+        <section class="featured-work animate-in">
+            <h2>Featured Projects</h2>
+            <div class="post-grid">
+                <div class="post-card">
+                    <h3>Tech Radar Platform</h3>
+                    <div class="tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Flask</span>
+                        <span class="tag">MongoDB</span>
+                    </div>
+                    <p>A comprehensive platform for tracking and analyzing technology trends across organizations.</p>
+                    <a href="https://github.com/peterosw/tech-radar" class="read-more">View Project →</a>
+                </div>
+                <div class="post-card">
+                    <h3>AI-Powered Code Assistant</h3>
+                    <div class="tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Machine Learning</span>
+                        <span class="tag">NLP</span>
+                    </div>
+                    <p>An intelligent code assistant that helps developers write better code faster.</p>
+                    <a href="https://github.com/peterosw/code-assistant" class="read-more">View Project →</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer bg-light text-center">
+        <div class="container">
+            <span class="text-muted"> 2024 Pete Oswald. All rights reserved.</span>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

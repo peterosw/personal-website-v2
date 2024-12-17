@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Resources - Pete Oswald</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .navbar, .footer {
+            background-color: #ffffff;
+        }
+        .footer {
+            padding: 10px 0;
+        }
+        .list-group-item {
+            border: none;
+            padding: 10px 15px;
+        }
+        .list-group-item a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .list-group-item a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">Pete Oswald</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="resume.html">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="links.html">Links</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="project_resources.html">Project Resources <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <h1>Project Resources</h1>
+        <h2>Initiate</h2>
+        <ul id="initiateResources" class="list-group mb-4">
+            <!-- Initiate resources will be loaded dynamically -->
+        </ul>
+        <h2>Define</h2>
+        <ul id="defineResources" class="list-group mb-4">
+            <!-- Define resources will be loaded dynamically -->
+        </ul>
+        <h2>Design</h2>
+        <ul id="designResources" class="list-group mb-4">
+            <!-- Design resources will be loaded dynamically -->
+        </ul>
+        <h2>Build</h2>
+        <ul id="buildResources" class="list-group mb-4">
+            <!-- Build resources will be loaded dynamically -->
+        </ul>
+        <h2>Test</h2>
+        <ul id="testResources" class="list-group mb-4">
+            <!-- Test resources will be loaded dynamically -->
+        </ul>
+        <h2>Deploy</h2>
+        <ul id="deployResources" class="list-group mb-4">
+            <!-- Deploy resources will be loaded dynamically -->
+        </ul>
+    </div>
+    <footer class="footer text-center">
+        <div class="container">
+            <span class="text-muted">© 2024 Pete Oswald. All rights reserved.</span>
+        </div>
+    </footer>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        const resources = [
+            {
+                title: "Project Charter Template",
+                url: "https://example.com/project-charter",
+                category: "initiate"
+            },
+            {
+                title: "Requirements Gathering Guide",
+                url: "https://example.com/requirements-guide",
+                category: "define"
+            },
+            {
+                title: "Design Patterns",
+                url: "https://example.com/design-patterns",
+                category: "design"
+            },
+            {
+                title: "Build Automation Tools",
+                url: "https://example.com/build-tools",
+                category: "build"
+            },
+            {
+                title: "Testing Frameworks",
+                url: "https://example.com/testing-frameworks",
+                category: "test"
+            },
+            {
+                title: "Deployment Checklist",
+                url: "https://example.com/deployment-checklist",
+                category: "deploy"
+            }
+        ];
+        function loadResources() {
+            const initiateResources = document.getElementById('initiateResources');
+            const defineResources = document.getElementById('defineResources');
+            const designResources = document.getElementById('designResources');
+            const buildResources = document.getElementById('buildResources');
+            const testResources = document.getElementById('testResources');
+            const deployResources = document.getElementById('deployResources');
+            
+            resources.forEach(resource => {
+                const li = document.createElement('li');
+                li.className = 'list-group-item';
+                li.innerHTML = `<a href="${resource.url}" target="_blank" rel="noopener noreferrer">${resource.title}</a>`;
+                
+                switch (resource.category) {
+                    case "initiate":
+                        initiateResources.appendChild(li);
+                        break;
+                    case "define":
+                        defineResources.appendChild(li);
+                        break;
+                    case "design":
+                        designResources.appendChild(li);
+                        break;
+                    case "build":
+                        buildResources.appendChild(li);
+                        break;
+                    case "test":
+                        testResources.appendChild(li);
+                        break;
+                    case "deploy":
+                        deployResources.appendChild(li);
+                        break;
+                }
+            });
+        }
+        window.addEventListener('load', loadResources);
+    </script>
+</body>
+</html>
