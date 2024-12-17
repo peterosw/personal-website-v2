@@ -5,14 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Search Pete Oswald's site</title>
     <style>
+        :root {
+            --background-light: #ffffff;
+            --text-dark: #000000;
+            --primary-color: #f8f9fa;
+            --text-light: #ffffff;
+        }
         body {
             font-family: Georgia, serif;
             line-height: 1.5;
             max-width: 40em;
             margin: 0 auto;
             padding: 2em 1em;
-            background-color: #ffffff;
-            color: #000000;
+            background-color: var(--background-light);
+            color: var(--text-dark);
         }
         h1 {
             font-size: 1.2em;
@@ -50,10 +56,14 @@
             text-decoration: underline;
         }
         .navbar, .footer {
-            background-color: #f8f9fa;
+            background-color: var(--primary-color);
         }
         .footer {
             padding: 10px 0;
+            color: var(--text-light);
+        }
+        .footer a {
+            color: var(--text-light);
         }
         .list-group-item {
             border: none;

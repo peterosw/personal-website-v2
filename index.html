@@ -9,27 +9,39 @@
     <link rel="stylesheet" href="styles.css">
     <meta name="description" content="Pete Oswald - Software Engineer specializing in building impactful digital solutions">
     <style>
+        :root {
+            --background-light: #ffffff;
+            --text-dark: #000000;
+            --primary-color: #f8f9fa;
+            --text-light: #ffffff;
+            --hover-color: #000000;
+        }
         body {
-            background-color: #ffffff;
-            color: #000000;
+            background-color: var(--background-light);
+            color: var(--text-dark);
+            font-family: Arial, sans-serif;
         }
         .navbar, .footer {
-            background-color: #f8f9fa;
+            background-color: var(--primary-color);
         }
         .footer {
             padding: 10px 0;
+            color: var(--text-light);
+        }
+        .footer a {
+            color: var(--text-light);
         }
         .list-group-item {
             border: none;
             padding: 10px 15px;
-            background-color: #ffffff;
+            background-color: var(--background-light);
         }
         .list-group-item a {
-            color: #000000;
+            color: var(--text-dark);
             text-decoration: none;
         }
         .list-group-item a:hover {
-            text-decoration: underline;
+            color: var(--hover-color);
         }
     </style>
 </head>
